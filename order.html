@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Fruit</title>
+    <style>
+         *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #image-logo img{
+            width: 50px;
+            height: 50px;
+            float: left;
+            position: relative;
+            padding-bottom: 5px;
+            padding-left: 75px;
+            padding-right: 75px;
+        }
+        header{
+            background-color: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-right: auto;
+            margin-left: auto;
+            border-bottom: 1px solid black;
+        }
+        #menu{
+            padding-top: 20px;
+            padding-bottom: 15px;
+        }
+        #menu nav ul li{
+            list-style: none;
+            display: inline;
+            padding-left: 75px;
+            padding-right: 75px;
+        }
+        #menu nav ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        #header-image{
+            background: url("Assets/Images/fruits-wallpaper.jpg");
+            width: auto;
+            height: 520px;
+            background-size: cover;
+        }
+        #banner{
+            background: url('Assets/Images/juice-wallpaper.jpg');
+            background-size: cover;
+            height: auto;
+        }
+        #banner h1{
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            font-size: 60px;
+        }
+        #overlay{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(241, 126, 18, 0.5);
+        }
+        #form-area{
+            padding-top: 100px;
+            padding-bottom: 100px;
+            margin: auto;
+            width: 50%;
+            height: auto;
+        }
+        #form-area p{
+            font-size: 25px;
+        }
+        textarea{
+            padding: 10px;
+            width: 100%;
+            border: 1px solid orange;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input{
+            padding: 10px 10px 10px 10px;
+            width: 100%;
+            border: 1px solid orange;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        #submit input{
+            background-color: orange;
+            color: white;
+        }
+        #gender input{
+            width: auto;
+        }
+        footer{
+            background-color: darkgreen;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+        footer #footer-text p{
+            color: white;
+            display: inline;
+        }
+        #footer-logo{
+            text-align: right;
+            padding-right: 70px;
+        }
+        #footer-logo img{
+            width: 30px;
+            height: 30px;
+            padding-left: 75px;
+        }
+        #footer-logo a {
+            text-decoration: none;
+        }
+        #footer-text p{
+            color: white;
+            float: left;
+            padding-top: 5px;
+        }
+        .wrapper{
+            padding: 10px;
+            border: 1px solid orange;
+            width: 100%;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .wrapper select{
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .wrapper input{
+            width: auto;
+        }
+        #submit input{
+            width: auto;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <header>
+            <div id="image-logo">
+                <img src="Assets/Images/sf-logo.png" alt="image logo">
+            </div>
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="order.html">Order</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+    <section id="banner">
+        <div id="banner">
+            <div id="overlay">
+                <h1>Order Form</h1>
+            </div>
+        </div>
+    </section>
+    <section id="order-form">
+       <div id="form-area">
+           <form action="index.html" method="post">
+                <div id="nama">
+                    <label for="nama">Full Name</label>
+                    <br>
+                    <input type="text" name="nama" placeholder="Enter Your Full Name">
+                </div>
+                <br>
+                <div id="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Enter Your Email">
+                </div>
+                <br>
+                <div id="phone-number">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" placeholder="Enter Your Phone Number">
+                </div>
+                <br>
+                <div id="quantity">
+                    <label for="qty">Quantity</label>
+                    <input type="number" name="qty" placeholder="Enter Total Buy">
+                </div>
+                <br>
+                <div id="address">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                </div>
+                <br>
+                <div id="gender">
+                    <label for="" id="label-gender">Gender</label>
+                    <div class="wrapper">
+                        <input type="radio" name="gender" id="" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="" value="female">
+                        <label for="female">Female</label>      
+                    </div>
+                </div>
+                <br>
+                <div id="product">
+                    <label for="product-list">Choose Product</label>
+                    <div class="wrapper">
+                        <select name="product-list">
+                            <optgroup label="Fruit">
+                                <option value="Orange">Orange</option>
+                                <option value="Mango">Mango</option>
+                                <option value="Apple">Apple</option>
+                            </optgroup>
+                            <optgroup label="Salad">
+                                <option value="SaladType1">Fruit Salad</option>
+                                <option value="SaladType2">Vegetable Salad</option>
+                                <option value="SaladType3">Fruit and Vegetable Salad</option>
+                            </optgroup>
+                            <optgroup label="Cocktail">
+                                <option value="CocktailType1">Cocktail 5 Fruits</option>
+                                <option value="CocktailType2">Cocktail 2 Fruits</option>
+                                <option value="CocktailType3">Cocktail 3 Fruits</option>
+                            </optgroup>
+                            <optgroup label="Cocktail">
+                                <option value="OrangeJuice">Orange Juice</option>
+                                <option value="MangoJuice">Mango Juice</option>
+                                <option value="AppleJuice">Apple Juice</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <br>
+               
+                <div id="payment">
+                    <label for="Payment Method" id="payment-label">Payment Method</label>
+                    <div class="wrapper">
+                        <input type="radio" name="payment" id="" value="cash">
+                        <label for="cod">Cash</label>
+                        <input type="radio" name="payment" id="" value="e-wallet">
+                        <label for="e-wallet">E - Wallet</label>
+                    </div>
+                </div>
+                <br>
+                <div class="wrapper">
+                    <div id="terms">
+                        <input type="checkbox" name="terms">
+                        <label for="terms">Terms and Services Agreement</label>
+                    </div>
+                </div>
+                <br>
+                <div id="submit">
+                    <input type="submit" value="Order Now">
+                </div>
+           </form>
+       </div>
+    </section>
+
+    
+    <section id="footer">
+        <footer>
+            <div id="footer-text" class="bold">
+                <p>&copy;Software Laboratory Center 2019/2020</p>
+            </div>
+            <div id="footer-logo">
+                <a href="https://www.youtube.com/user/realannoyingorange">
+                    <img src="Assets/Images/yt-logo.png" alt="youtube logo">
+                </a>
+                <a href="https://www.instagram.com/totalbuahsegar.id/">
+                    <img src="Assets/Images/ig-logo.png" alt="instagram logo">
+                </a>
+            </div>
+        </footer>
+    </section>
+
+</body>
+</html>

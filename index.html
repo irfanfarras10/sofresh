@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>So Fresh</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #image-logo img{
+            width: 50px;
+            height: 50px;
+            float: left;
+            position: relative;
+            padding-bottom: 5px;
+            padding-left: 75px;
+            padding-right: 75px;
+        }
+        header{
+            background-color: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-right: auto;
+            margin-left: auto;
+            border-bottom: 1px solid black;
+        }
+        #menu{
+            padding-top: 20px;
+            padding-bottom: 15px;
+        }
+        #menu nav ul li{
+            list-style: none;
+            display: inline;
+            padding-left: 75px;
+            padding-right: 75px;
+        }
+        #menu nav ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        #header-image{
+            background: url("Assets/Images/fruits-wallpaper.jpg");
+            width: auto;
+            height: 520px;
+            background-size: cover;
+        }
+        #about-text-header{
+            text-align: center;
+            padding-top: 30px;
+            font-size: 35px;
+        }
+        #about-text{
+            text-align: center;
+            font-size: 20px;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        #welcome-message{
+            border-bottom: 1px solid black;
+            padding-bottom: 30px;
+        }
+        .card{
+            margin-left: 36px;
+            margin-right: 36px;
+            margin-top: 30px;
+            box-shadow: 0px 2px 7px 0px grey;
+            width: 260px;
+            height: auto;
+            display: inline-block;
+        }
+        .card-content{
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 15px;
+        }
+        .card-content-title{
+            font-size: 15px;
+            font-weight: bold;
+            padding-bottom: 5px;
+        }
+        .card-content-title{
+            text-align: left;
+        }
+        .card-content-article-preview{
+            font-size: 15px;
+            text-align: left;
+        }
+        .card-image img:hover{
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        .card-image img{
+            width: 260px;
+            height: 260px;
+            transition: 1s;
+        }
+        #card-area{
+            padding-left: 5px;
+            text-align: center;
+        }
+        #wrapper{
+            margin: auto;
+            width: 90%;
+            padding-top: 75px;
+            padding-bottom: 25px;
+        }
+        #did-you-know-panel{
+            background: url('Assets/Images/fruit_oranges.jpg');
+            height: auto;
+            background-size: cover;
+            background-position-y: -200px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        #overlay-screen{
+            margin: auto;
+            width: 95%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.6);
+            padding-top: 100px;
+            padding-bottom: 60px;
+        }
+        #did-you-know{
+            text-align: center;
+            font-size: 60px;
+        }
+        #did-you-know-article{
+            padding-left: 60px;
+            padding-bottom: 20px;
+            padding-right: 60px;
+            font-size: 21.5px;
+            text-align: justify;
+        }
+        footer{
+            background-color: darkgreen;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+        footer #footer-text p{
+            color: white;
+            display: inline;
+        }
+        #footer-logo{
+            text-align: right;
+            padding-right: 70px;
+        }
+        #footer-logo img{
+            width: 30px;
+            height: 30px;
+            padding-left: 75px;
+        }
+        #footer-logo a {
+            text-decoration: none;
+        }
+        #footer-text p{
+            color: white;
+            float: left;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="header">
+        <header>
+            <div id="image-logo">
+                <img src="Assets/Images/sf-logo.png" alt="image logo">
+            </div>
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="order.html">Order</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+
+    <section id="banner">
+        <div id="header-image"></div>
+    </section>
+
+    <section id="welcome-side">
+        <div id="welcome-message">
+            <p id="about-text-header" class="bold">ABOUT US</p>  
+            <p id="about-text">So Fresh is a website that sell fresh fruit and juicy</p>
+            <p id="about-text">refreshments that established in 2019 by Bluejack Allstar.</p>
+            <p id="about-text">Your satisfaction is our priority.</p>
+            <p id="about-text" class="bold">Stay Healthy Be Happy Is Our Motto.</p>
+        </div>
+    </section>
+
+    <section id="content">
+        <div id="card-area">
+            <div class="card">
+                <div class="card-image">
+                    <img src="Assets/Images/fruits_heaven.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <p class="card-content-title">Fruits</p>
+                    <p class="card-content-article-preview">Our Fruits is so fresh, that it will blow your mind!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="Assets/Images/fruits-salad-wallpaper.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <p class="card-content-title">Salad</p>
+                    <p class="card-content-article-preview">Fruit salad yummy yummy!</p>
+                    <br>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="Assets/Images/fruits_heaven.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <p class="card-content-title">Fruit Cocktail</p>
+                    <p class="card-content-article-preview">Freezing and refreshing , WOW!</p>
+                    <br>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="Assets/Images/fruits_heaven.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <p class="card-content-title">Juice</p>
+                    <p class="card-content-article-preview">Juicy juice a day keep you haapy for life!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="information">
+        <div id="wrapper">
+            <div id="did-you-know-panel">
+                <div id="overlay-screen">
+                    <p id="did-you-know" class="bold">
+                        Did You Know?
+                    </p> 
+                    <p id="did-you-know-article">
+                        One Orange provides 130% of your vitamin C needs for the day, 2% vitamin a needs, and 6% of your daily value of calcium. Oranges contain more than 170 different phytochemicals and more than 60 flavnoids. They also contain choline, which helps with sleep, muscle movement, learning, and memory.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <footer>
+            <div id="footer-text" class="bold">
+                <p>&copy;Software Laboratory Center 2019/2020</p>
+            </div>
+            <div id="footer-logo">
+                <a href="https://www.youtube.com/user/realannoyingorange">
+                    <img src="Assets/Images/yt-logo.png" alt="youtube logo">
+                </a>
+                <a href="https://www.instagram.com/totalbuahsegar.id/">
+                    <img src="Assets/Images/ig-logo.png" alt="instagram logo">
+                </a>
+            </div>
+        </footer>
+    </section>
+  
+</body>
+</html>
